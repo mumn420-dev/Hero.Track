@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Family Chore & Task Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-container">
+        <header>
+            <h1>🏆 Family Task Tracker</h1>
+            <p>Manage daily tasks and chores for everyone!</p>
+        </header>
+
+        <!-- Family Member Selector -->
+        <section class="family-section">
+            <label for="memberSelect"><strong>Select Family Member:</strong></label>
+            <div class="member-controls">
+                <select id="memberSelect"></select>
+                <input type="text" id="newMemberInput" placeholder="Add new member (e.g., Alex)">
+                <button id="addMemberBtn">Add Member</button>
+            </div>
+        </section>
+
+        <!-- Task Input -->
+        <section class="task-input-section">
+            <input type="text" id="taskInput" placeholder="Type a new task or chore...">
+            <button id="addTaskBtn">Add Task</button>
+        </section>
+
+        <!-- Progress Bar -->
+        <section class="progress-section">
+            <div class="progress-label">
+                <span>Progress: <strong id="progressText">0%</strong></span>
+            </div>
+            <div class="progress-bar-container">
+                <div id="progressBar" class="progress-bar"></div>
+            </div>
+        </section>
+
+        <!-- Task List -->
+        <section class="task-list-section">
+            <h2>Tasks for <span id="currentMemberName">Everyone</span></h2>
+            <ul id="taskList"></ul>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
